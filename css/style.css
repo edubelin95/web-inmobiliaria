@@ -1,0 +1,408 @@
+
+html{
+    /* 1 rem = 16 px de base pero lo modificamos*/
+    /* 62.5% de 16=10px*/
+    font-size: 62.5% ;/* ahora 1 rem = 10px*/
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem; /*16 px*/
+}
+
+
+
+/*globales*/
+
+img{
+    max-width: 100%;
+ 
+}
+
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto 0 auto;
+}
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 3.4rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2.6rem;
+}
+
+/**Utilidades **/
+
+.seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.fw-300{
+    font-size: 300;
+}
+.centrar-texto{
+    text-align: center;    
+}
+
+.contenido-centrado{
+    max-width: 80rem;
+}
+
+
+
+/*header*/
+
+.site_header{
+    background-color: goldenrod;
+    padding: 1rem 0 3rem 0;
+}
+
+.site_header.inicio{
+    background-image: url(../img/header.jpg);
+    height: 100vh;
+    min-height: 60rem;
+    background-size: cover;    
+}
+
+.contenido-header{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+}
+
+
+.contenido-header h1{
+    color: white; 
+    padding-right: 2rem;
+    max-width: 70rem;
+    line-height: 5rem;
+}
+
+/*barra*/
+.barra{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+    align-items: flex-center;
+}
+
+.navegacion a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    margin-right: 2rem;
+}
+.navegacion a:last-of-type{
+    margin-right: 0;
+}
+
+.navegacion a:hover{
+    color: slateblue;
+}
+
+.iconos-nosotros{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.icono{
+    flex-basis: calc(33.3% - 2rem);
+    text-align: center;
+}
+
+.icono h3{
+    text-transform: uppercase;
+}
+
+/** Anuncios**/
+
+.contenedor-anuncios{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.anuncio{
+    flex: 0 0 calc(33.3% - 2rem);  
+    border: 4px solid cadetblue;
+    background-color: darkkhaki;
+    margin-bottom: 2rem;
+}
+
+
+
+.contenedor-anuncios{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.contenido-anuncio{
+  padding: 2rem;
+  
+}
+
+.contenido-anuncio h3,
+.contenido-anuncio p{
+    margin: 0.3rem;
+    
+}
+
+.precio{
+    color: darkgreen;
+    font-weight: bold;
+    font-size: 2.2rem;    
+    padding-top: 1rem;
+   
+   
+}
+
+.iconos-caracteristicas{
+    list-style: none;
+    padding: 0;
+    display: flex; 
+    justify-content: space-evenly; 
+    max-width: 50rem;  
+
+    flex: 1;
+}
+
+.iconos-caracteristicas li{
+    flex: 1;
+    display: flex;    
+}
+
+.iconos-caracteristicas li img{
+   margin-right: 2rem;   
+}
+.iconos-caracteristicas li p{
+    font-weight: bold; 
+ }
+
+
+/** botones**/
+.d-block{
+    display: block!important;
+}
+
+.boton{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;    
+    display: inline-block;
+    text-align: center;
+
+    border: 0.4rem double rgb(78, 75, 75)
+}
+.boton-amarillo{
+    background-color: goldenrod;
+}
+.boton-verde{
+    background-color: forestgreen;
+}
+
+.boton:hover{
+    cursor: pointer;
+}
+
+.ver-todas{
+    display: flex;    
+    justify-content: flex-end;
+}
+
+/**contacto Home**/
+.imagen-contacto{
+    background-image: url(../img/encuentra.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center;   
+}
+.contenido-contacto{
+    flex: 1;
+    color: white;    
+}
+
+.contenido-contacto p{
+    font-size: 1.8rem;  
+}
+
+/**seccion inferior**/
+.seccion-inferior{
+    display: flex;
+    justify-content: space-between;
+}
+.seccion-inferior .blog{
+    flex-basis: 60%;
+}
+
+.seccion-inferior .opiniones{
+    flex-basis: calc(40% - 2rem);
+}
+
+.entrada-blog{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.entrada-blog:last-of-type{
+    margin-bottom: 0;
+}
+.entrada-blog .imagen{
+    flex-basis: 40%;
+}
+.entrada-blog .texto-entrada{
+    flex-basis: calc(60% - 3rem);
+}
+.texto-entrada h4{
+    margin:0;
+    line-height: 3rem;
+}
+.texto-entrada a{
+    color: black;
+    text-decoration: none;
+    
+}
+.texto-entrada a::after{
+    content: '';
+    display: block;
+    width: calc(90% - 0rem);
+    height: 0.5rem;
+    background-color: darkkhaki;
+    margin-top: 1rem;
+ }
+
+ .texto-entrada span{
+    color: chocolate;
+ }
+
+.texto-entrada a:hover{
+   color: goldenrod;
+}
+
+.opinion{
+    background-color: rgb(106, 158, 15);
+    padding: 2rem 2rem;
+    font-size: 2rem;
+    color: white;
+    border-radius: 10%;
+}
+.opinion p{
+    text-align: right;
+}
+.opinion blockquote::before{
+    content: '';
+    background-image: url(../img/comilla.svg);
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: -2rem;
+}
+
+.opinion blockquote{
+    position: relative;
+    padding-left: 5rem;
+    font-weight: 300;
+}
+
+/**Footer**/
+ .site-footer{
+     background-color: goldenrod;
+     margin: 0;
+
+ }
+.contenedor-footer{
+    padding: 3rem 0rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+ .copyright{
+     margin: 0;
+ }
+
+
+
+ /**INTERNAS**/
+ /**nosostros**/
+ .contenido-nosotros{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     grid-column-gap: 2rem;
+ }
+
+ .texto-nosotros blockquote{
+     font-weight: 900;
+     font-size: 2rem;
+     margin: 0;
+     padding: 1rem 0 1 1rem 0;
+
+ }
+
+ /**Anuncio**/
+ .resumen-propiedad{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+
+ /**Contacto**/
+ label{
+     display: block;
+ }
+
+ input,select,textarea{
+     background-color:rgb(246, 226, 173);
+     border-radius: 3rem;
+     display: block;
+     padding: 1rem;
+     width: 99%;
+     margin: 1rem;  
+ }
+
+ input[type="submit"]{
+     
+     background-color: chocolate;
+    
+ }
+
+ fieldset{
+     border-radius: 2rem;
+     border: 2rem;
+     border: 0.2rem solid chocolate;
+     margin-top: 2rem;
+   
+ }
+
+ legend{
+     padding: 1rem;
+     color: chocolate;
+     font-size: 2rem;
+     text-transform: uppercase;
+     margin-left: 2rem;
+ 
+ }
+
+
+
